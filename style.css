@@ -1022,7 +1022,6 @@ header {
 
 /* Gameplay Hero Section */
 .gameplay-hero {
-  background-image: url("./images/game-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1404,5 +1403,382 @@ header {
 
   .gameplay-caption {
     font-size: 0.9rem;
+  }
+}
+
+/* Adding About Us page minimal styles to the existing CSS file */
+
+/* About Us Hero Section - Minimal */
+.about-us-hero-minimal {
+  background: linear-gradient(135deg, #1a1a1a 0%, #303030 100%);
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.about-us-hero-content-minimal {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-us-title-minimal {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: var(--text-color-secondary);
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-us-title-line {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  margin: 0 auto 30px;
+}
+
+.about-us-subtitle-minimal {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-color-secondary);
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* About Us Intro Section - Minimal */
+.about-us-intro-minimal {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.about-us-intro-wrapper-minimal {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-intro-content-minimal {
+  text-align: center;
+}
+
+.about-us-heading-minimal {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-us-heading-accent {
+  width: 80px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0 auto 40px;
+  position: relative;
+}
+
+.about-us-heading-accent::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: var(--primary-color);
+  left: -30px;
+  opacity: 0.5;
+}
+
+.about-us-heading-accent::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: var(--primary-color);
+  right: -30px;
+  opacity: 0.5;
+}
+
+.about-us-heading-accent-light {
+  background: var(--text-color-secondary);
+}
+
+.about-us-heading-accent-light::before,
+.about-us-heading-accent-light::after {
+  background: var(--text-color-secondary);
+}
+
+.about-us-text-minimal {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* About Us Mission Section - Minimal */
+.about-us-mission-minimal {
+  background-color: var(--background-color);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-mission-minimal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(30, 144, 255, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
+}
+
+.about-us-mission-banner-minimal {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.about-us-mission-wrapper-minimal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-us-mission-card-minimal {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.about-us-mission-card-minimal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(30, 144, 255, 0.3);
+}
+
+.about-us-mission-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* About Us Team Section - Minimal */
+.about-us-team-minimal {
+  background-color: var(--background-secondary-color);
+  padding: 80px 0;
+}
+
+.about-us-team-header-minimal {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-us-subheading-minimal {
+  font-size: 1.3rem;
+  color: var(--text-color-secondary);
+  margin-top: 15px;
+  text-align: center;
+}
+
+.about-us-team-content-minimal {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-us-team-description-minimal {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-us-team-roles-minimal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-us-team-role-minimal {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-team-role-minimal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(30, 144, 255, 0.3);
+}
+
+.about-us-role-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.about-us-role-title-minimal {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.about-us-role-desc-minimal {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+
+/* Media Queries for About Us Page - Minimal */
+@media (max-width: 1024px) {
+  .about-us-title-minimal {
+    font-size: 3rem;
+  }
+
+  .about-us-subtitle-minimal {
+    font-size: 1.3rem;
+  }
+
+  .about-us-heading-minimal {
+    font-size: 2.3rem;
+  }
+
+  .about-us-text-minimal {
+    font-size: 1.1rem;
+  }
+
+  .about-us-cta-text-minimal {
+    font-size: 1.6rem;
+  }
+
+  .about-us-mission-wrapper-minimal {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-values-grid-minimal {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-hero-minimal {
+    padding: 80px 0 60px;
+  }
+
+  .about-us-title-minimal {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .about-us-subtitle-minimal {
+    font-size: 1.2rem;
+  }
+
+  .about-us-heading-minimal {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .about-us-text-minimal {
+    font-size: 1rem;
+  }
+
+  .about-us-cta-text-minimal {
+    font-size: 1.4rem;
+  }
+
+  .about-us-team-roles-minimal {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-quote-text {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .timeline-content {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: 0;
+  }
+
+  .about-us-future-timeline::before {
+    left: 20px;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-hero-minimal {
+    padding: 60px 0 40px;
+  }
+
+  .about-us-title-minimal {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .about-us-subtitle-minimal {
+    font-size: 1rem;
+  }
+
+  .about-us-heading-minimal {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .about-us-text-minimal {
+    font-size: 0.95rem;
+  }
+
+  .about-us-cta-text-minimal {
+    font-size: 1.2rem;
+  }
+
+  .about-us-value-title-minimal {
+    font-size: 1.3rem;
+  }
+
+  .about-us-value-text-minimal {
+    font-size: 0.95rem;
+  }
+
+  .about-us-cta-btn-minimal {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+
+  .about-us-studio-quote {
+    padding: 30px 15px;
+  }
+
+  .quote-mark {
+    font-size: 3rem;
+  }
+
+  .about-us-quote-text {
+    font-size: 1.1rem;
+    padding: 0 15px;
   }
 }
